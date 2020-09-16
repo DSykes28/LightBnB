@@ -27,13 +27,25 @@ INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover
 VALUES (3, 'Ancestral Home', "description", "link", "link", 600, 2, 1, 2, 'Canada', '12 Bifrost St', "St John's", 'Newfoundland', B3I9E6, TRUE);
 
 INSERT INTO reservations (user_id, property_id, start_date, end_date)
-VALUES (2, 1, 2018-09-11, 2018-09-26);
+VALUES (6, 1, 2018-09-11, 2018-09-26);
 
 INSERT INTO reservations (user_id, property_id, start_date, end_date)
-VALUES (2, 1, 2019-01-04, 2019-02-01);
+VALUES (4, 3, 2019-01-04, 2019-02-01);
 
 INSERT INTO reservations (user_id, property_id, start_date, end_date)
-VALUES (2, 1, 2021-10-01, 2021-10-14);
+VALUES (6, 2, 2021-10-01, 2021-10-14);
+
+INSERT INTO reservations (user_id, property_id, start_date, end_date)
+VALUES (5, 2, 2018-09-11, 2018-09-26); 
 
 INSERT INTO property_reviews (user_id, property_id, reservation_id, rating, message)
-VALUES (2, 1, 2018-09-11, 2018-09-26);
+VALUES (5, 2, 4, 5, 'messages');
+
+INSERT INTO property_reviews (user_id, property_id, reservation_id, rating, message)
+VALUES (6, 1, 1, 4, 'messages');
+
+INSERT INTO property_reviews (user_id, property_id, reservation_id, rating, message)
+VALUES (4, 3, 2, 3, 'messages');
+
+INSERT INTO property_reviews (user_id, property_id, reservation_id, rating, message)
+VALUES (6, 2, 3, 4, 'messages');
